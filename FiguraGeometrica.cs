@@ -5,14 +5,14 @@ namespace ExempluClase
 {
     public class FiguraGeometrica
     {
-        // Data membră privată (vector)
+        
         private int[] dimensiuniLaturi;
 
         // Proprietăți auto-implemented
         public string Denumire { get; set; }
         public int NrLaturi { get; set; }
 
-        // Proprietate computed pentru Perimetru
+       
         public int Perimetru
         {
             get
@@ -27,7 +27,7 @@ namespace ExempluClase
             }
         }
 
-        // Proprietate computed pentru TipFigura
+        
         public string TipFigura
         {
             get
@@ -49,7 +49,7 @@ namespace ExempluClase
 
         public bool EstePoligon => NrLaturi >= 3;
 
-        // Metode pentru manipularea vectorului
+       
         public void SetDimensiuniLaturi(int[] _dimensiuniLaturi)
         {
             if (_dimensiuniLaturi != null)
@@ -65,7 +65,7 @@ namespace ExempluClase
             return dimensiuniLaturi != null ? (int[])dimensiuniLaturi.Clone() : null;
         }
 
-        // Constructori
+        
         public FiguraGeometrica()
         {
             Denumire = string.Empty;
@@ -79,7 +79,7 @@ namespace ExempluClase
             dimensiuniLaturi = new int[_nrLaturi];
         }
 
-        // Metoda Info
+        
         public string Info()
         {
             // Verificare denumire vidă
