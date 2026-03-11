@@ -6,7 +6,7 @@ namespace ExempluClase
     {
         static void Main()
         {
-            // --- Pasul 1: Preluare date de la tastatură ---
+           
             Console.WriteLine("=== Pasul 1: Creare figură manuală ===");
             Console.Write("Introduceți denumirea figurii: ");
             string nume = Console.ReadLine();
@@ -40,17 +40,17 @@ namespace ExempluClase
 
             Console.WriteLine("\n-------------------------------------------");
 
-            // --- Pasul 2: Joc - Generare automată de figuri ---
-            Console.WriteLine("=== Pasul 2: Joc - Generare automată de figuri ===");
+            
+            Console.WriteLine("Joc");
 
             Random rand = new Random();
 
-            // Generăm 5 figuri aleatorii
+            
             for (int i = 0; i < 5; i++)
             {
                 int nrLaturiAleator = rand.Next(0, 8); // între 0 și 7
 
-                // Denumire vidă conform cerinței
+               
                 FiguraGeometrica figuraJoc = new FiguraGeometrica(string.Empty, nrLaturiAleator);
 
                 Console.WriteLine($"Figura {i + 1} generată (Laturi: {nrLaturiAleator}) -> {figuraJoc.TipFigura}");
